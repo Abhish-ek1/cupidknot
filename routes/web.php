@@ -9,3 +9,4 @@ Route::get('/', function () {
 
 Route::get('new-user',[UserController::class,'new_user']);
 
+Route::get('register',[UserController::class,'register']);

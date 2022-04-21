@@ -60,21 +60,21 @@
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input type="text" name="date" id="dob" class="form-control" placeholder=" ">
+                        <input type="text" name="dob" id="dob" class="form-control" placeholder=" ">
                         <label for="dob">Date of birth</label>
                     </div>
 
                     <div class="d-flex mb-3">
                         <label for="" class="ms-2 me-1">Gender</label>
                         <div class="form-check">
-                            <input class="form-check-input mx-2" type="radio" name="gender" id="male" checked>
+                            <input class="form-check-input mx-2" type="radio" name="gender" id="male" value="male" checked>
                             <label class="form-check-label" for="male">
                                 Male
                             </label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input mx-2" type="radio" name="gender" id="female">
+                            <input class="form-check-input mx-2" type="radio" name="gender" id="female" value="female">
                             <label class="form-check-label" for="female">
                                 Female
                             </label>
@@ -117,9 +117,9 @@
                             <h7 class="">Are you Manglik?</h7>
                         </div>
                         <div class="col-4">
-                            <select class="p-1 rounded" name="mabglik" id="mabglik" placeholder="">
-                                <option>Yes</option>
-                                <option>No</option>
+                            <select class="p-1 rounded" name="manglik" id="manglik" placeholder="">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
                             </select>
                         </div>
                     </div>
@@ -131,7 +131,7 @@
 
                     <p>
                         <label for="partner_income">Partner expected income:</label>
-                        <input type="text" id="partner_income" class="border-0 bg-light" readonly">
+                        <input type="text" name="partner_income" id="partner_income" class="border-0 bg-light" readonly">
                     </p>
 
                     <div id="slider-range"></div>
@@ -140,7 +140,7 @@
 
                     <div class="multi_job_box">
                         <label>Partner occupation (multiselect)</label>
-                        <select id="" name="" multiple class="multi_job">
+                        <select id="" name="partner_job" multiple class="multi_job">
                             <option value="private">Private job</option>
                             <option value="government">Government job</option>
                             <option value="business">Business</option>
@@ -151,7 +151,7 @@
 
                     <div class="multi_family_box">
                         <label>Partner Family type (multiselect)</label>
-                        <select id="" name="" multiple class="multi_family">
+                        <select id="" name="partner_family" multiple class="multi_family">
                             <option value="joint">Joint family</option>
                             <option value="nuclear">Nuclear family</option>
                         </select>
@@ -163,9 +163,9 @@
                             <h7 class="">Prefer manglik ?</h7>
                         </div>
                         <div class="col-4">
-                            <select class="p-1 rounded" name="partner_mabglik" id="partner_mabglik" placeholder="">
-                                <option>Yes</option>
-                                <option>No</option>
+                            <select class="p-1 rounded" name="partner_manglik" id="partner_manglik" placeholder="">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
                             </select>
                         </div>
                     </div>
