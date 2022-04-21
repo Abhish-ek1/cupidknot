@@ -8,15 +8,26 @@ input:focus {
     box-shadow: none !important;
 }
 
-.submit_btn, a {
+.submit_btn,
+a {
     box-shadow: none !important;
 }
 
-.wrapper{
-   background-image: url("../images/bg.jpg");
+body {
+    /* background-image: url("../images/bg.jpg");
    background-position: center;
    background-size: contain;
-   background-attachment: fixed;
-   height: 100vh;
+   background-attachment: fixed; */
+    height: 100vh;
+    background-color: rgba(137, 214, 201, 0.308);
 
+
+}
+
+.multi_job, .multi_family {
+    width: 100% !important;    
+}
+
+input{
+    box-shadow: none;
 }
