@@ -15,24 +15,24 @@
     <section class="wrapper">
         <div class="container">
             <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4 pt-5">
-               
-                <form action="" class="rounded p-5 shadow bg-light">
+
+                <form action="check" class="rounded p-5 shadow bg-light">
                     <h3 class="text dark fw-bolder fs-4 mb-2">
-                        Login to Continue 
+                        Login to Continue
                     </h3>
 
-                   
+
                     <div class="text-muted fw-normal mb-4">
-                        New here? <a href="" class="test-primary fw-bold text-decoration-none">Create new account</a>
+                        New here? <a href="new-user" class="test-primary fw-bold text-decoration-none">Create new account</a>
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="email" placeholder=" ">
+                        <input type="email" class="form-control" name="email" id="email" placeholder=" ">
                         <label for="email">Email address</label>
                     </div>
 
                     <div class="form-floating">
-                        <input type="password" class="form-control" id="password" placeholder=" ">
+                        <input type="password" class="form-control" name="password" id="password" placeholder=" ">
                         <label for="password">Password</label>
                     </div>
 
@@ -51,16 +51,6 @@
                     <a href="" class="btn btn-dark w-100 mb-3  login_with">
                         <i class="fa-brands fa-google img-fluid me-3"></i>
                         Continue with Google
-                    </a>
-
-                    <a href="" class="btn btn-dark w-100 mb-3 login_with">
-                        <i class="fa-brands fa-facebook img-fluid me-3"></i>
-                        Continue with Facebook
-                    </a>
-
-                    <a href="" class="btn btn-dark w-100 mb-3 login_with">
-                        <i class="fa-brands fa-linkedin img-fluid me-3"></i>
-                        Continue with Linkedin
                     </a>
 
                 </form>

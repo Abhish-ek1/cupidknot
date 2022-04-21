@@ -24,13 +24,13 @@
         <div class="container">
             <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4 py-5 ">
 
-                <form action="register" class="rounded p-5 shadow bg-light">
+                <form action="register" method="post" class="rounded p-5 shadow bg-light">
                     <h1 class="text-dark fw-bolder mb-2">
                         Register
                     </h1>
 
                     <div class="text-muted fw-normal mb-4 ms-1">
-                        Already a user? <a href="" class="test-primary fw-bold text-decoration-none">Login</a>
+                        Already a user? <a href="login" class="test-primary fw-bold text-decoration-none">Login</a>
                     </div>
 
                     <div class="row mb-3">
@@ -93,9 +93,9 @@
                         </div>
                         <div class="col-6">
                             <select class="p-1 rounded" name="job" id="job" placeholder="">
-                                <option>Private job</option>
-                                <option>Government job</option>
-                                <option>Business</option>
+                                <option value="private job">Private job</option>
+                                <option value="government job">Government job</option>
+                                <option value="business">Business</option>
                             </select>
                         </div>
                     </div>
@@ -106,8 +106,8 @@
                         </div>
                         <div class="col-4 w-50">
                             <select class="p-1 rounded" name="family" id="family" placeholder="">
-                                <option>Joint family</option>
-                                <option>Nuclear family</option>
+                                <option value="joint">Joint family</option>
+                                <option value="nuclear">Nuclear family</option>
                             </select>
                         </div>
                     </div>

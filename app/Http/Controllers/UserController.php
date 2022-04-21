@@ -14,7 +14,6 @@ class UserController extends Controller
 
     public function register(Request $request)
     {
-        // return $request;
         $reg = new User;
         $reg->firstname = $request->firstname;
         $reg->lastname = $request->lastname;
@@ -34,5 +33,33 @@ class UserController extends Controller
 
         return redirect()->back()
             ->with('success', 'User saved successfully');
+    }
+
+    public function login()
+    {
+        return view('auth.login');
+    }
+
+    public function user()
+    {
+        return view('user');
+    }
+
+    public function admin()
+    {
+        return view('admin');
+    }
+
+    public function check(Request $request)
+    {
+        $check = User::where('email', $request->email)->first();
+
+        if ($check->password == $request->password) {
+            if ($check->role == 'admin') {
+                return redirect('admin');
+            } else {
+                return redirect('user');
+            }
+        }
     }
 }
