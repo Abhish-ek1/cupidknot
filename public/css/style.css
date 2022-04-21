@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    box-shadow: none !important;
+}
+
+.submit_btn, a {
+    box-shadow: none !important;
+}
+
+.wrapper{
+   background-image: url("../images/bg.jpg");
+   background-position: center;
+   background-size: contain;
+   background-attachment: fixed;
+   height: 100vh;
+
+}
