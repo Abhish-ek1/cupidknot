@@ -49,7 +49,7 @@
                         or
                     </div>
 
-                    <a href="{{route('google.login')}}" class="btn btn-dark w-100 mb-3  login_with">
+                    <a href="{{route('google')}}" class="btn btn-dark w-100 mb-3  login_with">
                         <i class="fa-brands fa-google img-fluid me-3"></i>
                         Continue with Google
                     </a>
