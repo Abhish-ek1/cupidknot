@@ -23,12 +23,11 @@ class GoogleController extends Controller
         $user = User::where('email', $userdata->email)->where('auth_type', 'google')->first();
 
         if ($user) {
-            Auth::login($user);
+            $request->session()->put('loginId', $user->firstname);
             return redirect('user');
         } else {
 
             $uuid = Str::uuid()->toString();
-
             $user = new User;
             $user->firstname = $userdata->name;
             $user->lastname = "none";

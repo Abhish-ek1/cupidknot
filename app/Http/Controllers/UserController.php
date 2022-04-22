@@ -13,7 +13,7 @@ class UserController extends Controller
     {
         return view('auth.register');
     }
-
+    
     public function register(Request $request)
     {
         $reg = new User;
@@ -49,7 +49,7 @@ class UserController extends Controller
         $value = $request->session()->get('loginId');
         $me = User::where('firstname', $value)->first();
         $others = User::all();
-        
+
         $percentages = [];
         foreach ($others as $other) {
             $i = 0;
