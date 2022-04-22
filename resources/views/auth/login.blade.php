@@ -17,6 +17,7 @@
             <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4 pt-5">
 
                 <form action="check" class="rounded p-5 shadow bg-light">
+                    @csrf
                     <h3 class="text dark fw-bolder fs-4 mb-2">
                         Login to Continue
                     </h3>

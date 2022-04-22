@@ -25,6 +25,7 @@
             <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4 py-5 ">
 
                 <form action="register" method="post" class="rounded p-5 shadow bg-light">
+                    @csrf
                     <h1 class="text-dark fw-bolder mb-2">
                         Register
                     </h1>
@@ -157,7 +158,7 @@
                         </select>
                     </div>
 
-                    
+
                     <div class="my-3 row">
                         <div class="col-6 text-start">
                             <h7 class="">Prefer manglik ?</h7>
