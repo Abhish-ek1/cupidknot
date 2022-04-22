@@ -7,18 +7,21 @@ User will be able to fill all their information and preferences.
 
 User will get match recommendations according to their preference.
 
+Admin will be able to see users and their preferences along with sorting options.
+
 # Setup:
 
- git clone the repository using 'git clone {repo-link}'.
+ Git clone the repository using 'git clone {repo-link}'.
 
- use 'php artisan serve' to live project on local host.
+ Use 'php artisan serve' to live project on local host.
 
  Create database in phpmyadmin and edit .env file database name.
 
  Import mySQL file or use 'php artisan migrate' to create tables.
 
  Seeder seeds admin data and users can be manually filled or seeded.
- use 'php artisan db:seed' to seed user and admin.
+
+ Use 'php artisan db:seed' to seed user and admin.
 
 
  
