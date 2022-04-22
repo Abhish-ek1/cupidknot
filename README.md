@@ -65,3 +65,10 @@ Welcome to Admin panel! Now you can see other users and their preferences.
 
 ![alt](https://github.com/Abhish-ek1/cupidknot/blob/master/Screenshot%207.png)
 
+
+# Recently Added :
+
+Google auth added!
+
+Final note: Need more improvisation of this code. Although basic functionality works good.
+
