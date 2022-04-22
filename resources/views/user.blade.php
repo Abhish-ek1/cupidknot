@@ -15,17 +15,22 @@
     <div class="container">
         <table class="table-bordered my-5">
             <tr>
-            <a href="logout">Logout</a>
+                <a href="logout">Logout</a>
+
 
                 <th>Match percentage</th>
             </tr>
 
             @for($i=0; $i<count($percentages); $i++) <tr>
                 @if($i == count($percentages)-1)@continue @endif
+
+                @if($percentages[$i+1]=='admin') @continue @endif
+                
                 @if($i%2 !== 1)
                 <td>{{$percentages[$i]}} with {{$percentages[$i+1]}}</td>
                 @else
                 @endif
+
                 @endfor
 
         </table>

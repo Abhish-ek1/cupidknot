@@ -33,7 +33,7 @@ class UserController extends Controller
         $reg->partner_manglik = $request->partner_manglik;
         $reg->save();
 
-        return redirect()->back()
+        return redirect('login')
             ->with('success', 'User saved successfully');
     }
 
@@ -43,8 +43,12 @@ class UserController extends Controller
     }
 
     public function user(Request $request)
+
     {
-        $me = User::where('firstname', "james")->first();
+
+        $value = $request->session()->get('loginId');
+
+        $me = User::where('firstname', $value)->first();
         $others = User::all();
 
         $percentages = [];
@@ -88,12 +92,14 @@ class UserController extends Controller
 
         if ($check->password == $request->password) {
             if ($check->role == 'admin') {
-                // Session::put('user', ['firstname' => $request->get('firstname'), 'email' => Auth::user()->email]);
 
-                $request->session()->put('loginId',$check->id);
+                $request->session()->put('loginId', $check->firstname);
+
                 return redirect('admin');
             } else {
-                $request->session()->put('loginId',$check->id);
+
+                $request->session()->put('loginId', $check->firstname);
+
                 return redirect('user');
             }
         }
