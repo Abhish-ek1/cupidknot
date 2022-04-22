@@ -21,3 +21,6 @@ Route::get('user',[UserController::class,'user']);
 Route::get('admin',[UserController::class,'admin']);
 
 Route::get('user-data',[AdminController::class,'getData']);
+
+Route::get('logout',[UserController::class,'logout']);
+

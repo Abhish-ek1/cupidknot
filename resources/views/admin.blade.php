@@ -16,6 +16,7 @@
     <div class="container-fluid">
         <h3>Users</h3>
         <table id="datatable" class="display">
+            <a href="logout">Logout</a>
             <thead>
                 <tr align="left">
                     <th>Name</th>
