@@ -47,10 +47,9 @@ class UserController extends Controller
     {
 
         $value = $request->session()->get('loginId');
-
         $me = User::where('firstname', $value)->first();
         $others = User::all();
-
+        
         $percentages = [];
         foreach ($others as $other) {
             $i = 0;
