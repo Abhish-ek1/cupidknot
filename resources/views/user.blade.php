@@ -25,7 +25,7 @@
                 @if($i == count($percentages)-1)@continue @endif
 
                 @if($percentages[$i+1]=='admin') @continue @endif
-                
+
                 @if($i%2 !== 1)
                 <td>{{$percentages[$i]}} with {{$percentages[$i+1]}}</td>
                 @else
