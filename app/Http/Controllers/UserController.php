@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -41,10 +42,9 @@ class UserController extends Controller
         return view('auth.login');
     }
 
-    public function user()
+    public function user(Request $request)
     {
         $me = User::where('firstname', "james")->first();
-
         $others = User::all();
 
         $percentages = [];
@@ -69,7 +69,7 @@ class UserController extends Controller
 
                     $percent = $i / $qualities;
                     $convert = $percent * 100;
-                    array_push($percentages, $convert,$other->firstname);
+                    array_push($percentages, $convert, $other->firstname);
                 }
             }
         }
@@ -88,6 +88,8 @@ class UserController extends Controller
 
         if ($check->password == $request->password) {
             if ($check->role == 'admin') {
+                // Session::put('user', ['firstname' => $request->get('firstname'), 'email' => Auth::user()->email]);
+
                 $request->session()->put('loginId',$check->id);
                 return redirect('admin');
             } else {
@@ -97,9 +99,11 @@ class UserController extends Controller
         }
     }
 
-    public function logout(){
-          if(Session::has('loginId')){
-              Session::pull('loginId');
-          }return redirect('login');
+    public function logout()
+    {
+        if (Session::has('loginId')) {
+            Session::pull('loginId');
+        }
+        return redirect('login');
     }
 }
