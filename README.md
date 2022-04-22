@@ -57,9 +57,7 @@ To explore Admin panel :
 Admin should be filled through seeder. So, use email 'admin@gmail.com' and password '12345678' (as pre-filled in seeder).
 
 
-![alt](https://github.com/Abhish-ek1/cupidknot/blob/master/Screenshot%208.png)
 ![alt](https://github.com/Abhish-ek1/cupidknot/blob/master/Screenshot%206.png)
-
 
 
 Welcome to Admin panel! Now you can see other users and their preferences.
