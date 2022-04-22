@@ -28,24 +28,42 @@ Use 'php artisan db:seed' to seed user and admin.
 
 Go to http://localhost:8000/ get a welcome screen (Basic).
 
+
+
 ![alt](https://github.com/Abhish-ek1/cupidknot/blob/master/Screenshot%201.png)
 
+
+
 Choose to fill Registration and you will be redirected automatically to login.
+
+
 
 ![alt](https://github.com/Abhish-ek1/cupidknot/blob/master/Screenshot%202.png)
 ![alt](https://github.com/Abhish-ek1/cupidknot/blob/master/Screenshot%203.png)
 
+
+
 Login and enter to see matched preferences.
+
+
 
 ![alt](https://github.com/Abhish-ek1/cupidknot/blob/master/Screenshot%204.png)
 ![alt](https://github.com/Abhish-ek1/cupidknot/blob/master/Screenshot%205.png)
 
+
+
 To explore Admin panel :
 
 Admin should be filled through seeder. So, use email 'admin@gmail.com' and password '12345678' (as pre-filled in seeder).
+
+
 ![alt](https://github.com/Abhish-ek1/cupidknot/blob/master/Screenshot%208.png)
 ![alt](https://github.com/Abhish-ek1/cupidknot/blob/master/Screenshot%206.png)
 
+
+
 Welcome to Admin panel! Now you can see other users and their preferences.
+
+
 ![alt](https://github.com/Abhish-ek1/cupidknot/blob/master/Screenshot%207.png)
 
