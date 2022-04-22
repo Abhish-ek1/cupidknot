@@ -28,7 +28,7 @@ Use 'php artisan db:seed' to seed user and admin.
 
 Go to http://localhost:8000/ get a welcome screen (Basic).
 
-!(https://github.com/Abhish-ek1/cupidknot/blob/master/Screenshot%201.png)
+![SS1](https://github.com/Abhish-ek1/cupidknot/blob/master/Screenshot%201.png)
 
 Choose to fill Registration and you will be redirected automatically to login.
 
